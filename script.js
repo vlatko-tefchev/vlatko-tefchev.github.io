@@ -24,8 +24,8 @@ for (let i = 0; i < liItems.length; i++ ) {
 let mainNavLinks = document.querySelectorAll("header ul li a");
 let mainSections = document.querySelectorAll("main section");
 
-// let lastId;
-// let cur = [];
+let lastId;
+let cur = [];
 
 window.addEventListener("scroll", event => {
     let fromTop = window.scrollY;
@@ -34,8 +34,8 @@ window.addEventListener("scroll", event => {
       let section = document.querySelector(link.hash);
   
       if (
-        section.offsetTop <= fromTop &&
-        section.offsetTop + section.offsetHeight > fromTop
+        section.offsetTop <= (fromTop + 1) &&
+        section.offsetTop + section.offsetHeight > (fromTop + 1)
       ) {
         link.classList.add("active");
       } else {
@@ -55,7 +55,7 @@ function showGif() {
 window.onload = (event) => {
      setTimeout(() => {
         document.getElementById("loading").style.display = "none"; 
-    }, 1500);    
+    }, 100);    
 };
 
 (function() {
@@ -85,10 +85,6 @@ function validateMyFields() {
     }
 }
 
-
-
-
-
 function AddClass(element, name) {
     var i, arr1, arr2;
     arr1 = element.className.split(" ");
@@ -96,9 +92,9 @@ function AddClass(element, name) {
     for (i = 0; i < arr2.length; i++) {
       if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
     }
-  }
+}
   
-  function RemoveClass(element, name) {
+function RemoveClass(element, name) {
     var i, arr1, arr2;
     arr1 = element.className.split(" ");
     arr2 = name.split(" ");
@@ -108,31 +104,7 @@ function AddClass(element, name) {
       }
     }
     element.className = arr1.join(" ");
-  }
-
-//   function filterSelection(c) {
-//     var x, i;
-//     x = document.getElementsByClassName("portfolio-filter");
-
-//     if (c == "all") {   
-//         for (i = 0; i < x.length; i++) {
-//             RemoveClass(x[i], "show");
-//             RemoveClass(x[i], "hide");
-//             AddClass(x[i], "show");
-//         }
-//     } else {
-//         for (i = 0; i < x.length; i++) {
-//             if (x[i].className.indexOf(c) == -1) {
-//                 RemoveClass(x[i], "show");
-//                 AddClass(x[i], "hide");
-//             } else {
-//                 RemoveClass(x[i], "hide");
-//                 AddClass(x[i], "show");
-//             }
-//         }
-//     }
-
-// }
+}
 
 
 let btns = document.querySelectorAll('portfolio-filter>nav>nav-item');
@@ -213,4 +185,12 @@ function filterSelection(c) {
 
 }
 
+document.addEventListener("DOMContentLoaded", function(event) {
+  var typed = new Typed('#typed',{
+      stringsElement: '#typed-strings',
+      backSpeed: 50,
+      typeSpeed: 50,
+      loop: true
+    });
+});
 
