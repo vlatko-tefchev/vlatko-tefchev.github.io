@@ -118,15 +118,9 @@ for (var i = 0; i < btns.length; i++) {
 
 
 
-function opencloseNav() {
-    // if (document.getElementById("mySidepanel").style.width == "0px") {
-    //     document.getElementById("mySidepanel").style.width = "110px";
-    // } else {
-    //     document.getElementById("mySidepanel").style.width = "0px";
-    // }  
+function opencloseNav() { 
     let headerElement = document.getElementById("mySidepanel");
     if (headerElement.clientWidth <= 0) {
-        // alert('1. '+document.getElementById("mySidepanel").clientWidth);
         headerElement.classList.add("header-left-show");
     } else {
         headerElement.classList.remove("header-left-show");
