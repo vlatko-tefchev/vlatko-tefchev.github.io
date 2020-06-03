@@ -89,6 +89,39 @@ img {
     box-shadow: 0 0 10px #719ECE;
 }
 
+.header-left .nav li a i {
+    font-size: 20px;
+    width: 100%;
+}
+
+.header-left .nav li a {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px 0;
+    display: block;
+    position: relative;
+    border-bottom: 1px solid rgba(9, 10, 12, 0.06);
+    text-transform: uppercase;
+    letter-spacing: 0.055rem;
+    color: #0091cd;
+}
+
+.header-left .navbar-brand {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+}
+
+/* My Skills */
+.feature-box-2 .icon {
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #0091cd;
+}
+
 /* Portfolio
 ------------------------------------------------------- */
 
@@ -144,7 +177,24 @@ img {
     padding: 18px 15px;
     border-radius: 5px;
     background: #ffffff;
-    border: 2px solid #d9832e;                            
+    border: 2px solid #0091cd;                            
+}
+
+.feature-box-1 .icon {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px dotted #0091cd;
+    color: #0091cd;
+    font-size: 32px;
+    margin-bottom: 22px;
+}
+
+.feature-box-1 .icon i {
+    padding-left: 1px;
+    padding-top: 13px;
 }
 
 #loading {
@@ -208,6 +258,26 @@ input:hover {
     color: rgba(255, 255, 255, 0.5);
     font-size: 12px;
     /* margin: 0; */
+}
+
+
+/* Testimonials */
+.carousel-item {
+    background-color: silver;
+}
+
+
+/* Blog */
+.blog-info {
+    position: relative;
+    /* border-color: #719ECE; */
+    box-shadow: 0 0 10px #719ECE;
+    top: -10px;
+    z-index: 100;
+    padding: 15px;
+    margin-left: 9px;
+    margin-right: 9px;
+    background-color: #ffffff;
 }
 
 @media screen and (max-width: 900px) {
