@@ -42,7 +42,7 @@ body {
 
 label {
     border-right: 1px solid gray;                                  
-    flex: 0 0 90px;
+    flex: 0 0 85px;
 }
 
 img {
@@ -158,13 +158,14 @@ img {
     white-space: nowrap;
 }
 
-.portfolio-item:hover .overlay {
+.portfolio-img:hover {
+    transform:scale(1.1,1.1);
+}
+
+.portfolio-box:hover .overlay {
     width: 100%;
 }
 
-.portfolio-box:hover {
-    transform:scale(1.1,1.1);
-}
 
 .feature-box-2 {
     padding: 18px 15px;
@@ -282,6 +283,107 @@ input:hover {
     margin-bottom: 15px;
 }
 
+.skill-item .skill-bar {
+    position: relative;
+    background: #eee;
+}
+
+.skill-item .skill-bar .skill-bar-in {
+    width: 0px;
+    -moz-transition: ease all 0.55s;
+    -o-transition: ease all 0.55s;
+    -webkit-transition: ease all 0.55s;
+    transition: ease all 0.55s;
+    height: 5px;
+    position: relative;
+}
+
+.skill-item .skill-bar .skill-bar-in span {
+    position: absolute;
+    right: 0;
+    top: -30px;
+    font-size: 14px;
+}
+
+.skill-item.md .skill-bar .skill-bar-in {
+    height: 8px;
+}
+
+.skill-item.lg .skill-bar .skill-bar-in {
+    height: 10px;
+}
+  
+.skill-item.light .skill-bar {
+    background: rgba(0, 0, 0, 0.5);
+} 
+
+  
+.skill-item:not(:first-child) {
+    margin-top: 30px;
+}
+
+.progress .progress-bar {
+    animation-name: animateBar;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: .4s;
+}
+
+.about-me h4 {
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0 0 10px;
+    color: #090a0c;
+}
+
+.about-me h6 {
+    color: #090a0c;
+    font-weight: 400;
+    margin: 0 0 20px;
+    font-size: 20px;
+}
+
+.sec-title h3 {
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0 0 10px;
+    color: #090a0c;
+}
+
+.sec-titele p {
+    color: #090a0c;
+    font-weight: 400;
+    margin: 0 0 20px;
+    font-size: 20px;
+}
+
+#contact-form .form-group .input-focus-effect {
+    position: absolute;
+    bottom: 10px;
+    left: auto;
+    right: 0;
+    width: 0px;
+    height: 2px;
+    -moz-transition: ease all 0.35s;
+    -o-transition: ease all 0.35s;
+    -webkit-transition: ease all 0.35s;
+    transition: ease all 0.35s;
+}
+
+#contact-form .form-group .form-control.invalid:focus + .input-focus-effect {
+    background: #ff0000;
+}
+#contact-form .form-group .form-control:focus + .input-focus-effect {
+    width: 100%;
+    right: auto;
+    left: 0;
+}
+
+@keyframes animateBar {
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(0);}
+}
+
 @media screen and (max-width: 900px) {
     .mob-header {
         display: block;
@@ -291,6 +393,32 @@ input:hover {
         width: 0px;
     }
 
+}
+
+@media (max-width: 770px) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 2;
+        -webkit-column-gap: 1.25rem;
+        -moz-column-gap: 1.25rem;
+        column-gap: 1.25rem;
+        orphans: 1;
+        widows: 1;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 1;
+        -webkit-column-gap: 1.25rem;
+        -moz-column-gap: 1.25rem;
+        column-gap: 1.25rem;
+        orphans: 1;
+        widows: 1;
+    }
 }
 
 

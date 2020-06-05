@@ -188,3 +188,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 });
 
+
+let divs = document.getElementsByClassName('skill-bar-in');
+
+for(let i = 0; i < divs.length; i++) {
+    var progressWidth = divs[i].getAttribute('aria-valuenow') + '%';
+    divs[i].setAttribute("style", "width: " + progressWidth + ";")
+}
+
