@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+        <meta name="apple-mobile-web-app-title" content="CodePen">
+        <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+        <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css'>
+
+        <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5ed3d32a9ea8120012d8284e&product=inline-share-buttons" async="async"></script>
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="style.css">
+
+        <title>Food</title>
+    </head>
+    <body>  
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <a class="navbar-brand" href="#">Food Network</a>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                       <a class="nav-link" href="index.html">Почетна <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="food.html">Храна</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Животен стил</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Пијалоци</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">За нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Контакт</a>
+                    </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li> -->
+                </ul> 
+                <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <section>
+            <div class="container">
+                <div class="row ">
+                    <div id="main-recipe" class="col-sm-12 col-md-9 col-lg-9">
+                        <div class="row">
+                            <div class="recipe-img-container">                           
+                                <img id="main-img" src="#" class="rounded mx-auto d-block align-self-start mt-5" style="width: 800px; height: 500px;" alt="...">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h1 class="mt-4">Наслов на рецепт</h1>
+                            <br><br>
+                        </div>
+                        <div class="row">
+                                                                                   
+                            <!-- <div class="cont">
+                                <div class="stars">
+                                    <form action="">
+                                        <input class="star star-5" id="star-5-2" type="radio" name="star"/>
+                                        <label class="star star-5" for="star-5-2"></label>
+                                        <input class="star star-4" id="star-4-2" type="radio" name="star"/>
+                                        <label class="star star-4" for="star-4-2"></label>
+                                        <input class="star star-3" id="star-3-2" type="radio" name="star"/>
+                                        <label class="star star-3" for="star-3-2"></label>
+                                        <input class="star star-2" id="star-2-2" type="radio" name="star"/>
+                                        <label class="star star-2" for="star-2-2"></label>
+                                        <input class="star star-1" id="star-1-2" type="radio" name="star"/>
+                                        <label class="star star-1" for="star-1-2"></label>
+                                        <div class="rev-box">
+                                            <textarea class="review" col="30" name="review"></textarea>
+                                            <label class="review" for="review">Breif Review</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div> -->
+    
+
+                            <!-- <h2>Pure CSS/Unicode (84% rating)</h2>
+                            <div class="star-ratings-css">
+                                <div class="star-ratings-css-top" style="width: 90%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                            </div> -->
+
+                            <br/><br/>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-4 border recipe-desc">
+                                <p>
+                                    <span><b>Ниво: </b></span>
+                                    <span>Лесно</span>
+                                </p>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-4 border recipe-desc">
+                                <p>
+                                    <span><b>Времетреање: </b></span>
+                                    <span>45 мин</span>
+                                </p>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-4 border recipe-desc">
+                                <p>
+                                    <span><b>Оброци: </b></span>
+                                    <span>4</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-6 border recipe-desc">
+                                <p><b>Состојки</b></p>
+                                <ul id="recipe-ingredients" class="recipe-ingredients">
+
+                                </ul>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6 border">
+                                <p><b>Инструкции</b></p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                <!-- <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p> -->
+                            </div>
+                        </div>
+                        <div class="enter-ratings">
+                            <h4>Ваша оцена и коментар</h4>
+                            <div class="cont">
+                                <div class="stars">
+                                    <form action="">
+                                        <input class="star star-5" id="star-5-2" type="radio" name="star"/>
+                                        <label class="star star-5" for="star-5-2"></label>
+                                        <input class="star star-4" id="star-4-2" type="radio" name="star"/>
+                                        <label class="star star-4" for="star-4-2"></label>
+                                        <input class="star star-3" id="star-3-2" type="radio" name="star"/>
+                                        <label class="star star-3" for="star-3-2"></label>
+                                        <input class="star star-2" id="star-2-2" type="radio" name="star"/>
+                                        <label class="star star-2" for="star-2-2"></label>
+                                        <input class="star star-1" id="star-1-2" type="radio" name="star"/>
+                                        <label class="star star-1" for="star-1-2"></label>
+                                        <div class="rev-box">
+                                            <input name="name" id="name" type="text" autocomplete="on" class=" review-name mb-2" placeholder="Name *" >
+                                            <textarea class="review" col="60" name="review"></textarea>
+                                            <!-- <label class="review" for="review">Breif Review</label> -->
+                                            <button class="btn btn-primary" type="submit" onclick="">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="reviews-list" id="reviews-list">
+                                <!-- <div class="review m-2 p-3">
+                                    <div class="review-from">
+                                        <b>Review by: </b>Annonimus
+                                    </div>
+                                    <div class="star-ratings-css">
+                                        <div class="star-ratings-css-top" style="width: 100%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                                        <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                                    </div>
+                                    <div class="review-text my-3">
+                                        sdafa ssdssds agre gg asdasd aefae eff efwr efwewe ewewr erw sfsfsff frferfrf frferfref ererfref erferferfer etgt getgetg ccrcer  wfrfr
+                                    </div>
+                                    <div class="recipe-likes">
+                                        <a class="recipe-likes-link" href="#">
+                                            <span>Like</span>
+                                        </a>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h6>Сподели</h6>                        
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="row">
+                            <h5>Може да ви се допадне</h5> 
+                            <br><br>                           
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <div class="card card-side-popular m-2" style="width: auto;">
+                                    <a href="recipe.html?id=Recipe006" class="card-link">
+                                        <img class="card-img-top" src="Images/Recipe006_md.jpg" alt="Card image cap">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="recipe.html?id=Recipe006" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <div class="card card-side-popular m-2" style="width: auto;">
+                                    <a href="recipe.html?id=Recipe007" class="card-link">
+                                        <img class="card-img-top" src="Images/Recipe007_md.jpg" alt="Card image cap">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="recipe.html?id=Recipe007" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <div class="card card-side-popular m-2" style="width: auto;">
+                                    <a href="recipe.html?id=Recipe008" class="card-link">
+                                        <img class="card-img-top" src="Images/Recipe008_md.jpg" alt="Card image cap">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="recipe.html?id=Recipe008" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="row">
+                    <h4>Најнови рецепти</h4>
+                    <br><br>
+                </div>   
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="card card-recipe-newest m-2" style="width: auto;">
+                            <a href="recipe.html?id=Recipe013" class="card-link">
+                                <img class="card-img-top" src="Images/Recipe013_md.jpg" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="recipe.html?id=Recipe013" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="card card-recipe-newest m-2" style="width: auto;">
+                            <a href="recipe.html?id=Recipe014" class="card-link">
+                                <img class="card-img-top" src="Images/Recipe014_md.jpg" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="recipe.html?id=Recipe014" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="card card-recipe-newest m-2" style="width: auto;">
+                            <a href="recipe.html?id=Recipe015" class="card-link">
+                                <img class="card-img-top" src="Images/Recipe015_md.jpg" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="recipe.html?id=Recipe015" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="card card-recipe-newest m-2" style="width: auto;">
+                            <a href="recipe.html?id=Recipe016" class="card-link">
+                                <img class="card-img-top" src="Images/Recipe016_md.jpg" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="recipe.html?id=Recipe016" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>            
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="sharethis-inline-share-buttons"></div>
+            <div class="text-center">
+                <p>© 2020 copyright all right reserved</p>
+            </div>
+        </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+        <!-- Custom JavaScript -->
+        <script src="recipes_mk.js"></script>
+        <script src="global.js"></script>
+        <script src="recipe.js"></script>
+    </body>
+</html>
