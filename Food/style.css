@@ -332,6 +332,10 @@ input.star:checked ~ .rev-box{
       height: 240px;
       width: 330px;
     }
+    .review {
+        width: auto !important;
+        max-width: auto !important;
+    }
 
 }
 
@@ -351,8 +355,12 @@ input.star:checked ~ .rev-box{
     background: #d7d7d8;
     border-radius: 5px;
     overflow: hidden;
-    width: 500px;
-    max-width: 500px;
+    /* width: 500px;
+    max-width: 500px; */
+}
+
+.reviews-list {
+    align-content: center;
 }
 
 /* .nav-child li {
