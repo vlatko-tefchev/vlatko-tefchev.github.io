@@ -10,8 +10,6 @@ function loadParams() {
              tmp = params[i].split('=');
              data[tmp[0]] = tmp[1];
         }
-        // let imgSrc = "Images/"+data.id+"_lg.jpg"
-        // document.getElementById('main-img').setAttribute("src",imgSrc);
     
         recipeID = data.id;
        
@@ -64,10 +62,6 @@ function loadMainRecipe() {
         mainRecipe = listRecipesJSON.recipes.filter(function (el) {
         return el.id == recipeID; 
         
-        // &&
-        //        el.sqft >= 500 &&
-        //        el.num_of_beds >=2 &&
-        //        el.num_of_baths >= 2.5;
     });
 
     var elRecipe = document.querySelector('#main-recipe');
@@ -87,7 +81,6 @@ loadMainRecipe();
 
 function loadRecipeIngredients(ingredients) {
     ingredients.forEach(element => {
-        // console.log(element.ingredient);
         let li = document.createElement('li');
         li.setAttribute('class','li-ingredient');
         li.innerHTML = element.ingredient;

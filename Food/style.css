@@ -1,25 +1,25 @@
 .home-img-container {
     height: 650px;
-    /* border: 1px solid black; */
 }
 
 .home-links {
     font-size: 50px;
     text-decoration: none;
     color: dimgray;
+    font-family: Canela,Arial,serif;
+    display: block;
+}
+
+.home-links:hover {
+    -webkit-transform: skewX(-10deg);
+    -o-transform: skewX(-10deg);
+    transform: skewX(-10deg);
 }
 
 a:hover {
     text-decoration: none;
-    color: black;
+    color: black;  
 }
-
-/* .media img {
-    width: 60%;
-    height: auto;
-} */
-
-/* Food */
 
 .card-food-main {
     border: none;
@@ -45,13 +45,6 @@ a:hover {
     color: dodgerblue;
 }
 
-
-/* Recipe */
-
-/* .card-recipe-newest .card-img-top {
-    height: 170px;
-    width: auto;
-} */
 
 .animated {
     -webkit-transition: height 0.2s;
@@ -310,10 +303,6 @@ input.star:checked ~ .rev-box{
       column-count: 2;
     }
 
-    /* .card-food-main-img {
-      height: 240px;
-      width: 330px;
-    } */
     .card-food-main-img {
       height: 180px;
       width: 250px;
@@ -344,11 +333,6 @@ input.star:checked ~ .rev-box{
   transition: 0.4s;
 }
 
-/* .card-food-main:hover {
-  transform:scale(1.1,1.1);
-  transition: 0.3s;
-} */
-
 
 .review {
     background-color: #d7d7d8;  
@@ -363,38 +347,36 @@ input.star:checked ~ .rev-box{
     align-content: center;
 }
 
-/* .nav-child li {
-    float: left;
-    width: auto;
-} */
-
-
 
 .nav-child li a {
-    /* position: relative;
-    display: block; */
     color: dimgray;
 } 
 
 .nav-child  {
-    /* display: none; */
     height: 50px;
     left: 0;
     position: absolute;
     margin-bottom: 100px;
     z-index: 99;
-    /* overflow: hidden; */
+    background-color: #f8f9fa;
+    width: 100%;
 }
 
 .nav-child li {
     display: inline;
-    padding: 0;
-    margin: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 12px;
     color: dimgray;
+    border-right: 1px solid dimgray;
 }
 
-/* .nav-item-category {
-    position: relative;
-    display: flex;  
-    float: left;  
-} */
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.act {
+    color: black !important;
+    font-size: 18px !important;
+}

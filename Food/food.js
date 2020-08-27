@@ -1,7 +1,6 @@
 const pegination_element = document.getElementById('pagination');
 var current_page = 1;
 var records_per_page = 8;
-// var listCardsMain = document.querySelectorAll(".card-food-main");
 var listCardsMain = document.querySelectorAll(".card-columns");
 var listMainRecipes = listRecipesJSON.recipes;
 listMainRecipes.sort(compareValues('rating','desc'));
@@ -11,10 +10,10 @@ let searchForm = document.querySelector('#searhForm');
 searchForm.addEventListener("submit", (e) => { 
     e.preventDefault();
     searchListRecipes();
+    removeActiveCategory();
     loadPageCards(listSortedRecipes.sort(compareValues('rating','desc')), listCardsMain, records_per_page, current_page);
     setupPagination(listSortedRecipes.sort(compareValues('rating','desc')), pegination_element, records_per_page);
     searchForm.reset();        
-    // enableDevelopmentButton();
 });
 
 function searchListRecipes() {
@@ -22,9 +21,15 @@ function searchListRecipes() {
     let filter = searchInput.value.toUpperCase();
     let textValue;
     listSortedRecipes = [];
+    let listIngredients;
+    
     for (let i = 0; i < listMainRecipes.length; i++) {
         item = listMainRecipes[i];
-        textValue = item.title + item.shortDirections + item.mediumDirections + item.directions;
+        listIngredients = [];
+        for (let j = 0; j < item.ingredients.length; j++) {
+            listIngredients += item.ingredients[j].ingredient;
+        }
+        textValue = item.title + item.shortDirections + item.mediumDirections + item.directions + listIngredients;
         if (textValue.toUpperCase().indexOf(filter) > -1) {
             listSortedRecipes.push(item);
         }
@@ -35,10 +40,10 @@ function getFoodCategory(categoryLink,category) {
     listSortedRecipes = [];
     let textValue;
     for (let i = 0; i < listMainRecipes.length; i++) {
+        item = listMainRecipes[i];
         if (category == '') {
             listSortedRecipes.push(item);
         } else {       
-            item = listMainRecipes[i];
             textValue = '';
 
             item.category.forEach(element => {
@@ -49,12 +54,23 @@ function getFoodCategory(categoryLink,category) {
             }
         }
     }
+    current_page = 1;
     loadPageCards(listSortedRecipes.sort(compareValues('rating','desc')), listCardsMain, records_per_page, current_page);
     setupPagination(listSortedRecipes.sort(compareValues('rating','desc')), pegination_element, records_per_page);
     if (listSortedRecipes.length == 0) {
-        // listCardsMain.innerHTML = '<p>Не е пронајден ниту еден рецепт од пребарувањето</p>';
+
     } 
-    
+    removeActiveCategory();
+    let activeLink = document.getElementById(categoryLink);
+    activeLink.classList.add('act');
+}
+
+function removeActiveCategory() {
+    let categoryLinks = document.getElementsByClassName('nav-item-category-link');
+    for (let j = 0; j < categoryLinks.length; j++) {
+        const element = categoryLinks[j];
+        element.classList.remove('act');
+    }
 }
 
 function loadPageCards(items, wrapper, rec_per_page, page) {
@@ -153,20 +169,9 @@ function loadPageCards(items, wrapper, rec_per_page, page) {
         wrapper[0].children[i].children[1].children[3].appendChild(spanReview);
         wrapper[0].children[i].children[1].children[4].appendChild(mainALink);
     
-        /*
-        // <a href="recipe.html?id=Recipe018" class="card-link"></a>
-        wrapper[i].children[0].setAttribute('href','recipe.html?id=' + item.id);
-        // <img class="card-food-main-img"
-        wrapper[i].children[0].children[0].setAttribute('src',item.imgURL + item.name + '_md.jpg');
-        // card-body a
-        wrapper[i].children[1].children[0].children[0].setAttribute('href','recipe.html?id=' + item.id);
-        wrapper[i].children[1].children[0].children[0].innerHTML = item.title;
-        wrapper[i].children[1].children[1].innerHTML = item.shortDirections;
-        loadMainRecipeRating(item.rating, wrapper[i].children[1].children[2]);
-        wrapper[i].children[1].children[3].children[0].innerHTML = item.rating;
-        wrapper[i].children[1].children[3].children[1].innerHTML = "(" + item.reviews.length + ")";
-        // <a
-        wrapper[i].children[1].children[4].children[0].setAttribute('href','recipe.html?id=' + item.id);  */
+    }
+    if (items.length == 0) {
+        wrapper[0].innerHTML = '<br><br><br><br><br><h4 style="width: max-content; color: royalblue;">Не е пронајден ниту еден рецепт од пребарувањето</h4><br><br><br><br><br>';
     }
 }
 
@@ -199,21 +204,7 @@ function paginationButton(page, items) {
     return button;
 }
 
-$(document).ready(function () {
-    loadPageCards(listMainRecipes.sort(compareValues('rating','desc')), listCardsMain, records_per_page, current_page);
-    setupPagination(listMainRecipes.sort(compareValues('rating','desc')), pegination_element, records_per_page);
-    loadCardPopular();
-    loadMediaFood();
-});
-
-// loadPageCards(listMainRecipes.sort(compareValues('rating','desc')), listCardsMain, records_per_page, current_page);
-// setupPagination(listMainRecipes.sort(compareValues('rating','desc')), pegination_element, records_per_page);
-
-
-
 function loadCardMain() {
-    // let listCardsMain = document.querySelectorAll(".card-food-main");
-    // let listMainRecipes = listRecipesJSON.recipes;
     listMainRecipes.sort(compareValues('rating','desc'));
     for (let i = 0; i < listCardsMain.length; i++) {
         // <a href="recipe.html?id=Recipe018" class="card-link"></a>
@@ -231,15 +222,6 @@ function loadCardMain() {
         listCardsMain[i].children[1].children[4].children[0].setAttribute('href','recipe.html?id=' + listMainRecipes[i].id);
     }
 };
-
-// loadCardMain();
-
-// function loadMainRecipeRating(rating, element) {
-//     let prc = (rating / 5) * 100;
-//     let strPrc = "width: " + prc + "%";
-
-//     element.children[0].setAttribute('style',strPrc);
-// }
 
 function loadCardPopular() {
     let listCardsPopular = document.querySelectorAll(".card-food-popular");
@@ -259,8 +241,6 @@ function loadCardPopular() {
     }
 };
 
-// loadCardPopular();
-
 function loadMediaFood() {
     let listMediaFood = document.querySelectorAll(".media-food");
     let listNewestRecipes = listRecipesJSON.recipes;
@@ -277,4 +257,9 @@ function loadMediaFood() {
     }
 };
 
-// loadMediaFood();
+$(document).ready(function () {
+    loadPageCards(listMainRecipes.sort(compareValues('rating','desc')), listCardsMain, records_per_page, current_page);
+    setupPagination(listMainRecipes.sort(compareValues('rating','desc')), pegination_element, records_per_page);
+    loadCardPopular();
+    loadMediaFood();
+});

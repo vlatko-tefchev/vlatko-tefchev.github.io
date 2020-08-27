@@ -19,7 +19,7 @@ var listRecipesJSON = {
                {"ord":"3", "ingredient":"1/4 cup extra-virgin olive oil, plus more for brushing"}
            ],
            "directions":"AAA Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-           "shortDirections":"A Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+           "shortDirections":"AA Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
            "mediumDirections":"AA Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
            "reviews":[
                {"ord":"1", "user":"Anonymous", "review":"Excellent recipe!", "date":"2020-06-29", "rate":"5", "like":"0", "comment":[]},
@@ -45,9 +45,9 @@ var listRecipesJSON = {
                 {"ord":"2", "ingredient":"2 heads radicchio, halved "},
                 {"ord":"3", "ingredient":"1/4 cup extra-virgin olive oil, plus more for brushing"}
            ],
-           "directions":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-           "shortDirections":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-           "mediumDirections":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+           "directions":"BB Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+           "shortDirections":"BB Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+           "mediumDirections":"BB Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
            "reviews":[
                 {"ord":"1", "user":"Anonymous", "review":"Excellent recipe!", "date":"2020-06-29", "rate":"5", "like":"0", "comment":[]},
                 {"ord":"2", "user":"Test", "review":"You should try it!", "date":"2020-06-29", "rate":"5", "like":"0", "comment":[]}
@@ -71,9 +71,9 @@ var listRecipesJSON = {
                 {"ord":"2", "ingredient":"2 heads radicchio, halved "},
                 {"ord":"3", "ingredient":"1/4 cup extra-virgin olive oil, plus more for brushing"}
            ],
-           "directions":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-           "shortDirections":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-           "mediumDirections":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+           "directions":"CC Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+           "shortDirections":"CC Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+           "mediumDirections":"CC Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
            "reviews":[
                 {"ord":"1", "user":"Anonymous", "review":"Excellent recipe!", "date":"2020-06-29", "rate":"5", "like":"0", "comment":[]},
                 {"ord":"2", "user":"Test", "review":"You should try it!", "date":"2020-06-29", "rate":"5", "like":"0", "comment":[]},
@@ -98,12 +98,12 @@ var listRecipesJSON = {
            "yield":"3 servings",
            "ingredients":[
                 {"ord":"1", "ingredient":"2 oranges, halved"},
-                {"ord":"2", "ingredient":"2 heads radicchio, halved "},
+                {"ord":"2", "ingredient":"2 heads radicchio, halved"},
                 {"ord":"3", "ingredient":"1/4 cup extra-virgin olive oil, plus more for brushing"}
            ],
-           "directions":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-           "shortDirections":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-           "mediumDirections":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+           "directions":"DD Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+           "shortDirections":"DD Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+           "mediumDirections":"DD Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
            "reviews":[
                 {"ord":"1", "user":"Anonymous", "review":"Excellent recipe!", "date":"2020-06-29", "rate":"5", "like":"0", "comment":[]}
             ]
@@ -124,7 +124,7 @@ var listRecipesJSON = {
            "ingredients":[
                 {"ord":"1", "ingredient":"2 oranges, halved"},
                 {"ord":"2", "ingredient":"2 heads radicchio, halved "},
-                {"ord":"3", "ingredient":"1/4 cup extra-virgin olive oil, plus more for brushing"}
+                {"ord":"3", "ingredient":"1/4 cup extra-virgin olive oil, plus more for brushing FF"}
            ],
            "directions":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
            "shortDirections":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
@@ -151,8 +151,8 @@ var listRecipesJSON = {
            "timeLength":"75 min",
            "yield":"3 servings",
            "ingredients":[
-                {"ord":"1", "ingredient":"2 oranges, halved"},
-                {"ord":"2", "ingredient":"2 heads radicchio, halved "},
+                {"ord":"1", "ingredient":"2 oranges, halved EEE"},
+                {"ord":"2", "ingredient":"2 heads radicchio, halved EEE"},
                 {"ord":"3", "ingredient":"1/4 cup extra-virgin olive oil, plus more for brushing"}
            ],
            "directions":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",

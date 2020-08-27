@@ -14,9 +14,6 @@
         <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="style.css">
 
-        <!-- <script src="recipes_mk.js"></script>
-        <script src="recipe.js"></script> -->
-
         <title>Food</title>
         
     </head>
@@ -33,9 +30,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="food.html">Храна</a>
-                        <ul class="nav-child unstyled mt-3">
+                        <ul class="nav-child unstyled py-3">
                             <li class="nav-item-category">
-                                <a id="category-link-0" class= "nav-item-category-link" href="#" title="all" onclick="getFoodCategory('category-link-o','')">Сите</a>
+                                <a id="category-link-0" class= "nav-item-category-link act" href="#" title="all" onclick="getFoodCategory('category-link-0','')">Сите</a>
                             </li>
                             <li class="nav-item-category">
                                 <a id="category-link-1" class= "nav-item-category-link" href="#" title="salad" onclick="getFoodCategory('category-link-1','salad')">Салати</a>
@@ -75,9 +72,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Контакт</a>
                     </li>
-                <!-- <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li> -->
                 </ul> 
                 <form id="searhForm" class="form-inline my-2 my-lg-0">
                 <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -91,213 +85,7 @@
             <div class="container mt-5">
                 
                 <div class="card-columns">
-                    <!--
-                    <div class="card card-food-main m-2" style="width: auto;">
-                        <a href="recipe.html?id=Recipe018" class="card-link">
-                            <img class="card-food-main-img" src="Images/Recipe018_md.jpg" alt="Card image cap">
-                        </a>
-                        <div class="card-body">
-                            <h5 id="firstID" class="card-title">
-                                <a href="recipe.html?id=Recipe018">
-                                    Card title
-                                </a>                                    
-                            </h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <div class="star-ratings-css">
-                                <div class="star-ratings-css-top" style="width: 100%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                            </div>
-                            <div class="number-ratings mt-2">
-                                <span>4.8</span>
-                                <span>(10)</span>
-                            </div>
-                            <div class="card-food-main-link mt-2">
-                                <a href="recipe.html?id=Recipe018" class="card-link">READ MORE</a>
-                            </div>
-                        </div>                            
-                    </div>
-
-                    <div class="card card-food-main m-2" style="width: auto;">
-                        <a href="recipe.html?id=Recipe004" class="card-link">
-                            <img class="card-food-main-img" src="Images/Recipe004_md.jpg" alt="Card image cap">
-                        </a>
-                        <div class="card-body">
-                            <h5 id="firstID" class="card-title">
-                                <a href="recipe.html?id=Recipe004">
-                                    Card title
-                                </a>                                    
-                            </h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <div class="star-ratings-css">
-                                <div class="star-ratings-css-top" style="width: 100%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                            </div>
-                            <div class="number-ratings mt-2">
-                                <span>4.8</span>
-                                <span>(10)</span>
-                            </div>
-                            <div class="card-food-main-link mt-2">
-                                <a href="recipe.html?id=Recipe004" class="card-link">READ MORE</a>
-                            </div>
-                        </div>                            
-                    </div>
-
-
-                    <div class="card card-food-main m-2" style="width: auto;">
-                        <a href="recipe.html?id=Recipe020" class="card-link">
-                            <img class="card-food-main-img" src="Images/Recipe020_md.jpg" alt="Card image cap">
-                        </a>
-                        <div class="card-body">
-                            <h5 id="firstID" class="card-title">
-                                <a href="recipe.html?id=Recipe020">
-                                    Card title
-                                </a>                                    
-                            </h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <div class="star-ratings-css">
-                                <div class="star-ratings-css-top" style="width: 100%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                            </div>
-                            <div class="number-ratings mt-2">
-                                <span>4.8</span>
-                                <span>(10)</span>
-                            </div>
-                            <div class="card-food-main-link mt-2">
-                                <a href="recipe.html?id=Recipe020" class="card-link">READ MORE</a>
-                            </div>
-                        </div>                            
-                    </div>
-
-
-                    <div class="card card-food-main m-2" style="width: auto;">
-                        <a href="recipe.html?id=Recipe021" class="card-link">
-                            <img class="card-food-main-img" src="Images/Recipe021_md.jpg" alt="Card image cap">
-                        </a>
-                        <div class="card-body">
-                            <h5 id="firstID" class="card-title">
-                                <a href="recipe.html?id=Recipe021">
-                                    Card title
-                                </a>                                    
-                            </h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <div class="star-ratings-css">
-                                <div class="star-ratings-css-top" style="width: 100%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                            </div>
-                            <div class="number-ratings mt-2">
-                                <span>4.8</span>
-                                <span>(10)</span>
-                            </div>
-                            <div class="card-food-main-link mt-2">
-                                <a href="recipe.html?id=Recipe021" class="card-link">READ MORE</a>
-                            </div>
-                        </div>                            
-                    </div>
                     
-
-                    <div class="card card-food-main m-2" style="width: auto;">
-                        <a href="recipe.html?id=Recipe014" class="card-link">
-                            <img class="card-food-main-img" src="Images/Recipe014_md.jpg" alt="Card image cap">
-                        </a>
-                        <div class="card-body">
-                            <h5 id="firstID" class="card-title">
-                                <a href="recipe.html?id=Recipe014">
-                                    Card title
-                                </a>                                    
-                            </h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <div class="star-ratings-css">
-                                <div class="star-ratings-css-top" style="width: 100%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                            </div>
-                            <div class="number-ratings mt-2">
-                                <span>4.8</span>
-                                <span>(10)</span>
-                            </div>
-                            <div class="card-food-main-link mt-2">
-                                <a href="recipe.html?id=Recipe014" class="card-link">READ MORE</a>
-                            </div>
-                        </div>                            
-                    </div>
-
-
-                    <div class="card card-food-main m-2" style="width: auto;">
-                        <a href="recipe.html?id=Recipe015" class="card-link">
-                            <img class="card-food-main-img" src="Images/Recipe015_md.jpg" alt="Card image cap">
-                        </a>
-                        <div class="card-body">
-                            <h5 id="firstID" class="card-title">
-                                <a href="recipe.html?id=Recipe015">
-                                    Card title
-                                </a>                                    
-                            </h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <div class="star-ratings-css">
-                                <div class="star-ratings-css-top" style="width: 100%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                            </div>
-                            <div class="number-ratings mt-2">
-                                <span>4.8</span>
-                                <span>(10)</span>
-                            </div>
-                            <div class="card-food-main-link mt-2">
-                                <a href="recipe.html?id=Recipe015" class="card-link">READ MORE</a>
-                            </div>
-                        </div>                            
-                    </div>
-
-
-                    <div class="card card-food-main m-2" style="width: auto;">
-                        <a href="recipe.html?id=Recipe016" class="card-link">
-                            <img class="card-food-main-img" src="Images/Recipe016_md.jpg" alt="Card image cap">
-                        </a>
-                        <div class="card-body">
-                            <h5 id="firstID" class="card-title">
-                                <a href="recipe.html?id=Recipe016">
-                                    Card title
-                                </a>                                    
-                            </h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <div class="star-ratings-css">
-                                <div class="star-ratings-css-top" style="width: 100%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                            </div>
-                            <div class="number-ratings mt-2">
-                                <span>4.8</span>
-                                <span>(10)</span>
-                            </div>
-                            <div class="card-food-main-link mt-2">
-                                <a href="recipe.html?id=Recipe016" class="card-link">READ MORE</a>
-                            </div>
-                        </div>                            
-                    </div>
-
-
-                    <div class="card card-food-main m-2" style="width: auto;">
-                        <a href="recipe.html?id=Recipe017" class="card-link">
-                            <img class="card-food-main-img" src="Images/Recipe017_md.jpg" alt="Card image cap">
-                        </a>
-                        <div class="card-body">
-                            <h5 id="firstID" class="card-title">
-                                <a href="recipe.html?id=Recipe017">
-                                    Card title
-                                </a>                                    
-                            </h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <div class="star-ratings-css">
-                                <div class="star-ratings-css-top" style="width: 100%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                            </div>
-                            <div class="number-ratings mt-2">
-                                <span>4.8</span>
-                                <span>(10)</span>
-                            </div>
-                            <div class="card-food-main-link mt-2">
-                                <a href="recipe.html?id=Recipe017" class="card-link">READ MORE</a>
-                            </div>
-                        </div>                            
-                    </div>
-                    -->
                 </div>                
             </div>
         </section>
@@ -309,7 +97,7 @@
         <!-- Most popular -->
         <section>
             <div class="container">
-                <div class="row">
+                <div class="row m-2">
                     <h4>Најпопуларни рецепти</h4>
                 </div>
                 <div class="row">
@@ -392,12 +180,12 @@
         <!-- Newest -->
         <section>
             <div class="container">
-                <div class="row">
+                <div class="row m-2">
                     <h4>Најнови рецепти</h4>
                     <br><br>
                 </div>
-                <div class="row">
-                    <div class="media media-food m-3">
+                <div class="row m-2">
+                    <div class="media media-food my-3">
                         <div class="row">
                             <div class="col-sm-12 col-md-8">
                                 <a href="recipe.html?id=Recipe010" class="card-link">
@@ -411,8 +199,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="media media-food m-3">
+                <div class="row m-2">
+                    <div class="media media-food my-3">
                         <div class="row">
                             <div class="col-sm-12 col-md-8">
                                 <a href="recipe.html?id=Recipe011" class="card-link">
@@ -426,8 +214,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="media media-food m-3">
+                <div class="row m-2">
+                    <div class="media media-food my-3">
                         <div class="row">
                             <div class="col-sm-12 col-md-8">
                                 <a href="recipe.html?id=Recipe012" class="card-link">
@@ -457,11 +245,7 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <!-- Custom JavaScript -->
-        <script type="text/javascript" src="recipes_mk.json"></script>
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.0.3/vue-resource.js"></script>
-        <!-- <script src="js/addons/rating.js"></script> -->
         <script src="recipes_mk.js"></script>
         <script src="global.js"></script>
         <script src="food.js"></script>
